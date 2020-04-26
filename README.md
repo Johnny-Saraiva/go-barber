@@ -5,12 +5,12 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend Github" src=".github/gobarber.png" width="100%">
+  <img alt="Frontend Github" src=".github/gobarber.gif" width="100%">
 </p>
 
 # GoBarber 💻
 
-O GoBarber é um projeto exemplo do Bootcamp da Rocketseat onde será feito um aplicativo completo Backend, Web e Mobile. Será atualizado conforme eu for evoluindo e adquirindo aprendizado nos conteúdos passados em cada módulo..
+O GoBarber é um projeto exemplo do Bootcamp da Rocketseat onde será feito um aplicativo completo Backend, Web e Mobile. Será atualizado conforme eu for evoluindo e adquirindo aprendizado nos conteúdos passados em cada módulo...
 
 ## 🚀 Tecnologias
 
