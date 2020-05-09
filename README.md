@@ -7,10 +7,10 @@
 </h4>
 
 <p align="center">
-<img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/Johnny-Saraiva/go-barber?color=312E38">
-<img alt="Made by Johnny" src="https://img.shields.io/badge/made%20by-Johnny Saraiva-%20?color=312E38">
-<img alt="Project top programing language" src="https://img.shields.io/github/languages/top/Johnny-Saraiva/go-barber?color=312E38">
-<img alt="GitHub license" src="https://img.shields.io/github/license/Johnny-Saraiva/go-barber?color=312E38">
+<img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/Johnny-Saraiva/go-barber?color=%23FF9000">
+<img alt="Made by Johnny" src="https://img.shields.io/badge/made%20by-Johnny Saraiva-%20?color=%23FF9000">
+<img alt="Project top programing language" src="https://img.shields.io/github/languages/top/Johnny-Saraiva/go-barber?color=%23FF9000">
+<img alt="GitHub license" src="https://img.shields.io/github/license/Johnny-Saraiva/go-barber?color=%23FF9000">
 </p> 
 
 <p align="center">
@@ -45,12 +45,14 @@ Esse projeto está utilizando as seguintes tecnologias:
 -  [React-toastify](https://github.com/fkhadra/react-toastify)
 -  [React Navigation](https://reactnavigation.org/)
 -  [React-icons](https://react-icons.netlify.com/)
+-  [Express](https://expressjs.com/pt-br/)
 -  [Axios](https://github.com/axios/axios)
 -  [Polished](https://polished.js.org/)
 -  [Yup](https://www.npmjs.com/package/yup)
 -  [Date-fns](https://date-fns.org/)
 -  [ESLint](https://eslint.org/)
 -  [Prettier](https://prettier.io/)
+-  [EditorConfig](https://editorconfig.org/)
 -  [VS Code](https://code.visualstudio.com/)
 
 
