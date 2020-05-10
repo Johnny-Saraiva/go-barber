@@ -46,6 +46,7 @@ Esse projeto está utilizando as seguintes tecnologias:
 -  [React Navigation](https://reactnavigation.org/)
 -  [React-icons](https://react-icons.netlify.com/)
 -  [Express](https://expressjs.com/pt-br/)
+-  [Docker](https://www.docker.com/docker-community)
 -  [Axios](https://github.com/axios/axios)
 -  [Polished](https://polished.js.org/)
 -  [Yup](https://www.npmjs.com/package/yup)
@@ -67,6 +68,10 @@ Foi utilizado uma imagem do Docker com PostgresSQL, caso queira utilizar o mesmo
 ```bash
 # Instalar a imagem do Postgres
 $ docker run --name imagename -e POSTGRES_PASSWORD=yourPassword -p 5432:5432 -d postgres
+
+# Exemplo criando um docker com database:
+
+$ docker run --name gostack-postgres -e POSTGRES_USER=docker -e POSTGRES_DB=gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
 # start Postgres
 $ docker start imageName
