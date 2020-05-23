@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { FiPower, FiClock } from 'react-icons/fi';
 import {
@@ -8,14 +8,18 @@ import {
   Profile,
   Content,
   Schedule,
-  Calendar,
   NextAppointment,
+  Section,
+  Appointment,
+  Calendar,
 } from './styles';
 
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/Auth';
 
 const Dashboard: React.FC = () => {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
   const { signOut, user } = useAuth();
   return (
     <Container>
@@ -61,6 +65,77 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+
+          <Section>
+            <strong>Manhã</strong>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars0.githubusercontent.com/u/61694500?s=460&u=569ca31df3fdba24b547eb9afd836d72ae2f30ae&v=4"
+                  alt="Johnny Saraiva"
+                />
+
+                <strong>Johnny Saraiva</strong>
+              </div>
+            </Appointment>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars0.githubusercontent.com/u/61694500?s=460&u=569ca31df3fdba24b547eb9afd836d72ae2f30ae&v=4"
+                  alt="Johnny Saraiva"
+                />
+
+                <strong>Johnny Saraiva</strong>
+              </div>
+            </Appointment>
+          </Section>
+
+          <Section>
+            <strong>Tarde</strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars0.githubusercontent.com/u/61694500?s=460&u=569ca31df3fdba24b547eb9afd836d72ae2f30ae&v=4"
+                  alt="Johnny Saraiva"
+                />
+
+                <strong>Johnny Saraiva</strong>
+              </div>
+            </Appointment>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars0.githubusercontent.com/u/61694500?s=460&u=569ca31df3fdba24b547eb9afd836d72ae2f30ae&v=4"
+                  alt="Johnny Saraiva"
+                />
+
+                <strong>Johnny Saraiva</strong>
+              </div>
+            </Appointment>
+          </Section>
         </Schedule>
         <Calendar />
       </Content>
