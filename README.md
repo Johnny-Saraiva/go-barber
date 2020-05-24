@@ -14,7 +14,7 @@
 </p> 
 
 <p align="center">
-  <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-built-with">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-run">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,7 +30,7 @@
 
 ## Projeto 💻
 
-O GoBarber é um projeto exemplo do Bootcamp da Rocketseat onde será feito um aplicativo completo Backend, Web e Mobile. Será atualizado conforme eu for evoluindo e adquirindo aprendizado nos conteúdos passados em cada módulo...
+O GoBarber é um projeto exemplo do Bootcamp da Rocketseat, um aplicativo completo com Backend utilizando Node.js, Frontend com ReactJS e Mobile com React Native.
 
 ## 🚀 Tecnologias
 
@@ -51,6 +51,7 @@ Esse projeto está utilizando as seguintes tecnologias:
 -  [Polished](https://polished.js.org/)
 -  [Yup](https://www.npmjs.com/package/yup)
 -  [Date-fns](https://date-fns.org/)
+-  [react-day-picker](https://react-day-picker.js.org/)
 -  [ESLint](https://eslint.org/)
 -  [Prettier](https://prettier.io/)
 -  [EditorConfig](https://editorconfig.org/)
@@ -66,15 +67,13 @@ Esse projeto está utilizando as seguintes tecnologias:
 Foi utilizado uma imagem do Docker com PostgresSQL, caso queira utilizar o mesmo realizar os passos abaixo:
 
 ```bash
-# Instalar a imagem do Postgres
-$ docker run --name imagename -e POSTGRES_PASSWORD=yourPassword -p 5432:5432 -d postgres
 
-# Exemplo criando um docker com database:
+# Instalar a imagem do Postgres no docker:
 
 $ docker run --name gostack-postgres -e POSTGRES_USER=docker -e POSTGRES_DB=gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
 # start Postgres
-$ docker start imageName
+$ docker start gostack-postgres
 
 ```
 
@@ -119,7 +118,7 @@ $ yarn start
 
 ### Mobile
 
-...
+...Em desenvolvimento ...
 
 ## :memo: Licença
 
