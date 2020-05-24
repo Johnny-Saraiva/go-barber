@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
@@ -35,7 +35,7 @@ export const Avatarinput = styled.div`
     border-radius: 50%;
   }
 
-  button {
+  label {
     position: absolute;
     width: 48px;
     height: 48px;
@@ -44,6 +44,7 @@ export const Avatarinput = styled.div`
     right: 0;
     bottom: 0;
     border: 0;
+    cursor: pointer;
     transition: background-color 0.2;
 
     display: flex;
@@ -58,6 +59,10 @@ export const Avatarinput = styled.div`
 
     &:hover {
       background: ${shade(0.2, '#ff9000')};
+    }
+
+    input {
+      display: none;
     }
   }
 `;
@@ -102,16 +107,5 @@ export const Content = styled.div`
     &:hover {
       color: ${shade(0.2, '#ff9000')};
     }
-  }
-`;
-
-const appearFromRight = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 `;
