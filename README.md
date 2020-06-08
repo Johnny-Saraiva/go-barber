@@ -1,10 +1,10 @@
-<h1 align="center">
+<p align="center">
     <img alt="Gobarber" title="gobarber" src=".github/logo.svg" width="200px" />
-</h1>
+</p>
 
-<h4 align="center">
+<h1 align="center">
    💈 GoBarber 💈 
-</h4>
+</h1>
 
 <p align="center">
 <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/Johnny-Saraiva/go-barber?color=%23FF9000">
@@ -14,10 +14,11 @@
 </p> 
 
 <p align="center">
-  <a href="#computer-project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-built-with">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-run">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-about-the-project">About the Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#mailbox-contacts">Contacts</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#memo-license">License</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -28,13 +29,13 @@
 
 <br>
 
-## Projeto 💻
+## :computer: About the Project 
 
-O GoBarber é um projeto exemplo do Bootcamp da Rocketseat, um aplicativo completo com Backend utilizando Node.js, Frontend com ReactJS e Mobile com React Native.
+GoBarber is a tutorial project made on Rocketseat's GoStack Bootcamp, a complete application with Backend using Node.js, Frontend with ReactJS and Mobile with React Native.
 
-## 🚀 Tecnologias
+## :hammer: Technologies
 
-Esse projeto está utilizando as seguintes tecnologias:
+This project was built with:
 
 -  [Typescript](https://www.typescriptlang.org/)
 -  [Node.js](https://nodejs.org/)
@@ -58,17 +59,42 @@ Esse projeto está utilizando as seguintes tecnologias:
 -  [VS Code](https://code.visualstudio.com/)
 
 
-## 🔖 Layout
+## :rocket: Getting Started
 
-...
+**Clone or Download the Repository**
 
-## 🚀 Instalação e execução
+```bash
+$ git clone https://github.com/Johnny-Saraiva/go-barber.git
 
-Foi utilizado uma imagem do Docker com PostgresSQL, caso queira utilizar o mesmo realizar os passos abaixo:
+# Back-end server 
+$ cd ecoleta-booster/backend
+
+# Front-end web 
+$ cd ecoleta-booster/frontend
+
+# Mobile
+$ cd ecoleta-booster/mobile
+```
+
+**Installing Dependencies**
+
+```bash
+# if you use yarn, run this:
+
+$ yarn
+```
+or
+```bash
+# if you use npm, run this:
+
+$ npm install
+```
+
+**Installing Docker Image**
 
 ```bash
 
-# Instalar a imagem do Postgres no docker:
+# Install the Postgres image on the docker:
 
 $ docker run --name gostack-postgres -e POSTGRES_USER=docker -e POSTGRES_DB=gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
@@ -77,29 +103,14 @@ $ docker start gostack-postgres
 
 ```
 
-### Backend
-
-  Clone e instalação de Dependências.
-
-```bash
-# Faça clone do repositório:
-$ git clone https://github.com/Johnny-Saraiva/go-barber.git
-
-# Abra a pasta backend:
-$ cd go-barber/backend
-
-#Instalar as dependências do backend:
-$ yarn
-
-```
-
+**Back-end**
 
 ```bash
 
 # run migrations
 $ yarn typeorm migration:run
 
-# Rodar o teste
+# start server
 $ yarn dev:server
 
 ```
@@ -108,19 +119,34 @@ $ yarn dev:server
 
 ```bash
 
-# Abra uma nova aba do terminal e instale as dependências do frontend:
-
 $ cd frontend
+
 $ yarn
+
 $ yarn start
 
 ```
 
 ### Mobile
 
-...Em desenvolvimento ...
+```bash
 
-## :memo: Licença
+$ cd mobile
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+$ yarn
 
+$ yarn start
+
+```
+
+## :mailbox: Contacts
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/johnny-saraiva-701641164/).
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](LICENSE.md) for more information..
+
+---
+
+Made with ❤️ by Johnny Saraiva 👋 [Get in touch!](https://www.linkedin.com/in/johnny-saraiva-701641164/)
