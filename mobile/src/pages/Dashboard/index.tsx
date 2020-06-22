@@ -75,7 +75,6 @@ const Dashboard: React.FC = () => {
             }}
           >
             <ProviderAvatar source={{ uri: provider.avatar_url }} />
-            {console.log(provider.avatar_url)}
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
