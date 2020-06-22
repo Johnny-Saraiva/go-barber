@@ -24,7 +24,7 @@ import {
 export interface Provider {
   id: string;
   name: string;
-  avarat_url: string;
+  avatar_url: string;
 }
 
 const Dashboard: React.FC = () => {
@@ -74,7 +74,8 @@ const Dashboard: React.FC = () => {
               navigateToCreateAppointment(provider.id);
             }}
           >
-            <ProviderAvatar source={{ uri: provider.avarat_url }} />
+            <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            {console.log(provider.avatar_url)}
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
