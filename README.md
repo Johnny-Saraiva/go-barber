@@ -29,6 +29,12 @@
 
 <br>
 
+<p align="center">
+  <img alt="GoBarber" src=".github/gobarber-mobile.gif" width=250>
+</p>
+
+<br>
+
 ## :computer: About the Project 
 
 GoBarber is a tutorial project made on Rocketseat's GoStack Bootcamp, a complete application with Backend using Node.js, Frontend with ReactJS and Mobile with React Native.
