@@ -19,6 +19,7 @@ import {
   ProviderMeta,
   ProviderMetaText,
   ProvidersListTitle,
+  LogOutButton,
 } from './styles';
 
 export interface Provider {
@@ -30,7 +31,7 @@ export interface Provider {
 const Dashboard: React.FC = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
 
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
   const { navigate } = useNavigation();
 
   useEffect(() => {
@@ -38,9 +39,14 @@ const Dashboard: React.FC = () => {
       setProviders(response.data);
     });
   }, []);
+
   const navigateToProfile = useCallback(() => {
     navigate('Profile');
   }, [navigate]);
+
+  const handleLogOut = useCallback(() => {
+    signOut();
+  }, [signOut]);
 
   const navigateToCreateAppointment = useCallback(
     (providerId: string) => {
@@ -60,6 +66,10 @@ const Dashboard: React.FC = () => {
         <ProfileButton onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url }} />
         </ProfileButton>
+
+        <LogOutButton onPress={handleLogOut}>
+          <Icon name="power" size={24} color="#999591" />
+        </LogOutButton>
       </Header>
       <ProvidersList
         data={providers}
