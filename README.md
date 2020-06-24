@@ -73,13 +73,13 @@ This project was built with:
 $ git clone https://github.com/Johnny-Saraiva/go-barber.git
 
 # Back-end server 
-$ cd ecoleta-booster/backend
+$ cd go-barber/backend
 
 # Front-end web 
-$ cd ecoleta-booster/frontend
+$ cd go-barber/frontend
 
 # Mobile
-$ cd ecoleta-booster/mobile
+$ cd go-barber/mobile
 ```
 
 **Installing Dependencies**
@@ -141,7 +141,11 @@ $ cd mobile
 
 $ yarn
 
-$ yarn start
+# If you want to run with an iPhone simulator, but need to have a mac and Xcode configured.
+$ yarn ios
+
+# If you want to run with an Android
+$ yarn android
 
 ```
 
